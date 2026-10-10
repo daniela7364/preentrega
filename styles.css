@@ -59,8 +59,12 @@ nav {
 .logo span {
     display: block;
     color: #c95b9b;
-    font-size: 0.65rem;
+    font-size: 0.75rem;
     letter-spacing: 5px;
+}
+
+.logo {
+    text-decoration: none;
 }
 
 nav ul {
