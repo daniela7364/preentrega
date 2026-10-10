@@ -1,12 +1,170 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>ÁUREA Skin | Cuidado de la piel</title>
+
+    <meta name="description" content="Descubre nuestra selección de productos para el cuidado de la piel.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <h1>inicio</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque explicabo minus magni perspiciatis facere. Quaerat expedita nisi dolorem velit, explicabo non excepturi tempore perferendis consequuntur iure aperiam aliquam saepe ab.</p>
+
+    <header id="inicio">
+        <nav aria-label="Navegación principal">
+            <a href="#inicio" class="logo">ÁUREA<span>SKIN</span></a>
+
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#resenas">Reseñas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">TU RITUAL, TU MOMENTO</p>
+
+                <h1>Tu piel merece<br>un cuidado especial.</h1>
+
+                <p class="hero-description">
+                    Descubre una rutina de cuidado facial sencilla,
+                    delicada y pensada para resaltar tu belleza natural.
+                </p>
+
+                <a href="#productos" class="button">Descubrir productos</a>
+            </div>
+        </section>
+
+        <section id="productos" class="products-section">
+            <p class="eyebrow">NUESTROS FAVORITOS</p>
+            <h2>Cuida tu piel</h2>
+
+            <p class="section-description">
+                Esenciales para transformar tu rutina diaria.
+            </p>
+
+            <div class="products-container">
+
+                <article class="product-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=700&q=80"
+                        alt="Producto cosmético para el cuidado facial"
+                    >
+                    <h3>Limpiador facial</h3>
+                    <p>Limpieza suave para todos los días.</p>
+                    <p class="price">$12.000</p>
+                </article>
+
+                <article class="product-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=700&q=80"
+                        alt="Crema hidratante para la piel"
+                    >
+                    <h3>Crema hidratante</h3>
+                    <p>Hidratación y suavidad para tu piel.</p>
+                    <p class="price">$18.000</p>
+                </article>
+
+                <article class="product-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=700&q=80"
+                        alt="Sérum cosmético para el rostro"
+                    >
+                    <h3>Sérum facial</h3>
+                    <p>Un paso extra para tu rutina de cuidado.</p>
+                    <p class="price">$15.000</p>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="resenas" class="reviews-section">
+            <p class="eyebrow">LO QUE DICEN</p>
+            <h2>Experiencias reales</h2>
+
+            <div class="reviews-container">
+
+                <article class="review-card">
+                    <p class="stars" aria-label="5 de 5 estrellas">★★★★★</p>
+                    <p>"Me encanta lo sencilla que se volvió mi rutina."</p>
+                    <h3>— Sofía M.</h3>
+                </article>
+
+                <article class="review-card">
+                    <p class="stars" aria-label="5 de 5 estrellas">★★★★★</p>
+                    <p>"Los productos tienen una presentación preciosa."</p>
+                    <h3>— Valentina R.</h3>
+                </article>
+
+                <article class="review-card">
+                    <p class="stars" aria-label="5 de 5 estrellas">★★★★★</p>
+                    <p>"Una experiencia de cuidado que disfruto cada día."</p>
+                    <h3>— Camila P.</h3>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="contacto" class="contact-section">
+            <p class="eyebrow">ESTAMOS PARA TI</p>
+            <h2>Hablemos de tu rutina</h2>
+
+            <p class="section-description">
+                ¿Tienes alguna consulta? Escríbenos.
+            </p>
+
+            <form action="#" method="POST" class="contact-form">
+                <label for="nombre">Nombre</label>
+                <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Tu nombre"
+                    required
+                >
+
+                <label for="email">Correo electrónico</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="tu@email.com"
+                    required
+                >
+
+                <label for="mensaje">Mensaje</label>
+                <textarea
+                    id="mensaje"
+                    name="mensaje"
+                    rows="5"
+                    placeholder="¿En qué podemos ayudarte?"
+                    required
+                ></textarea>
+
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <a href="#inicio" class="logo">ÁUREA<span>SKIN</span></a>
+        <p>Cuidar tu piel también es cuidarte a ti.</p>
+        <p>© 2026 ÁUREA Skin. Proyecto educativo.</p>
+    </footer>
+
 </body>
 </html>
